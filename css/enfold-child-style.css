@@ -433,12 +433,12 @@ background: white !important;
 button #copy-button {
 	height: 30px !important;
 	width: 30px !important;
-	background-image:url('http://dev.solace.com/wp-content/uploads/2017/03/copy-snippet-icon_30.png');
+	background-image:url('//dev.solace.com/wp-content/uploads/2017/03/copy-snippet-icon_30.png');
 	float: left;
 }
 
 button #copy-button:hover {
-	background-image:url('http://dev.solace.com/wp-content/uploads/2017/03/copy-snippet-icon_30-mouseover.png');
+	background-image:url('//dev.solace.com/wp-content/uploads/2017/03/copy-snippet-icon_30-mouseover.png');
 }
 
 input #post-shortlink .copy-field {
