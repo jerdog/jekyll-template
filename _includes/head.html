@@ -5,12 +5,11 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="icon" href="{{ "/template/images/solace-favicon.png " | prepend: site.baseurl }}" type="image/x-icon">
 
   {% if jekyll.environment == 'solaceCloud' %}
-    <link rel="icon" href="{{ "/template/images/solace-cloud-icon.png " | prepend: site.baseurl }}" type="image/x-icon">
     {% include solace-cloud-dependency.html %}
   {% else %}
-    <link rel="icon" href="{{ "/template/images/favicon.ico " | prepend: site.baseurl }}" type="image/x-icon">
     {% include dev-solace-dependency.html %}
   {% endif %}
 
