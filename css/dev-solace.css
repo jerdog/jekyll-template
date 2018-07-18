@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, #top .title_container .main-title, tr.pricing-row td, #t
 }
 
 #footer a {
-  font-size: 13px;
+  font-size: 12px !important;
 }
 
 #footer {
