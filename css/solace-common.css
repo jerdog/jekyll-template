@@ -30,9 +30,34 @@ p {
     margin: 0 0 .5em;
 }
 
+.features {
+    margin: 30px 0;
+}
+
+.features .feature {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.features a {
+    color: #00ad93;
+}
+
+.features .summary {
+    padding-left: 20px;
+}
+
 .container-tutorials {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
+}
+
+.container-tutorials .title {
+    background: none !important;
+    font-size: 27px;
+    padding: 10px 0 !important;
+    border: none !important;
+    color: rgba(0, 0, 0, 1);
 }
 
 .blue-gradient {
@@ -323,6 +348,11 @@ aside .nav {
     font-size: 24px;
 }
 
+.tutorials.learn.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .tutorials .card > a {
     position: absolute;
     top: 0;
@@ -360,7 +390,7 @@ aside .nav {
 */
 h4.navheading {
     text-transform: uppercase;
-    padding: 0 0 10px 20px;
+    padding: 0 0 2px 20px;
     margin-left: -22px;
     display: inline-block;
     /*border-bottom: 1px #c9c9c9 solid;*/
@@ -377,6 +407,10 @@ ul.navlist {
     list-style: none;
     font-size: 16px;
     margin: 0;
+}
+
+li.navlink{
+    margin-bottom: 0;
 }
 
 li.navlink a {
