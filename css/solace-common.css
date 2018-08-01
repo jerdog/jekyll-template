@@ -30,21 +30,10 @@ p {
     margin: 0 0 .5em;
 }
 
-.features {
-    margin: 30px 0;
-}
-
-.features .feature {
-    margin-top: 10px;
-    padding-left: 5px;
-}
-
-.features a {
-    color: #00ad93;
-}
-
-.features .summary {
-    padding-left: 20px;
+.feature {
+    background: linear-gradient(#009192, #4b6c6c) !important;
+    position: relative !important;
+    height: 75px !important;
 }
 
 .container-tutorials {
@@ -192,6 +181,7 @@ img {
 .article-container {
     position: relative;
     padding-right: 245px;
+    min-height: 800px;
 }
 
 @media only screen and (max-width : 760px) {
@@ -350,7 +340,7 @@ aside .nav {
 
 .tutorials.learn.row {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .tutorials .card > a {
