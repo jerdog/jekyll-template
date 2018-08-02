@@ -329,7 +329,6 @@ aside .nav {
 
 .tutorials .card .card-title {
     font-weight: 500 !important;
-    z-index: 2;
     color: #fff;
     position: absolute;
     bottom: 0;
