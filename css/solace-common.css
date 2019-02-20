@@ -36,6 +36,13 @@ p {
     height: 75px !important;
 }
 
+.feature .card-title{
+    height: 100%;
+    padding: 0 20px !important;
+    align-items: center;
+    display: flex;
+}
+
 .container-tutorials {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
@@ -418,7 +425,7 @@ aside .nav {
     bottom: 0;
     left: 0;
     padding: 20px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .tutorials.learn.row {
