@@ -27,34 +27,20 @@
     <select name="menu" onchange="top.window.location = this.value">
         <option value="#" selected>Pick Another API</option>
         <optgroup label="Solace APIs">
-            {% if jekyll.environment == 'solaceCloud' %}
-                {% for item in site.solace-apis-cloud %}
-                    <option value="{{item.value}}">{{item.name}}</option>
-                {% endfor %}
-            {% else %}
-                {% for item in site.solace-apis-dev %}
-                    <option value="{{item.value}}">{{item.name}}</option>
-                {% endfor %}
-            {% endif %}
+            {% for item in site.solace-apis-cloud %}
+                <option value="{{item.value}}">{{item.name}}</option>
+            {% endfor %}
         </optgroup>
         <optgroup label="Open APIs & Protocols">
-            {% if jekyll.environment == 'solaceCloud' %}
-                {% for item in site.open-apis-cloud %}
-                    <option value="{{item.value}}">{{item.name}}</option>
-                {% endfor %}
-            {% else %}
-                {% for item in site.open-apis-dev %}
-                    <option value="{{item.value}}">{{item.name}}</option>
-                {% endfor %}
-            {% endif %}
+            {% for item in site.open-apis-cloud %}
+                <option value="{{item.value}}">{{item.name}}</option>
+            {% endfor %}
         </optgroup>
-        {% if jekyll.environment != 'solaceCloud' %}
-            <optgroup label="Other Environments">
-                {% for item in site.other-environments-dev %}
-                    <option value="{{item.value}}">{{item.name}}</option>
-                {% endfor %}
-            </optgroup>
-        {% endif %}
+        <optgroup label="Other Environments">
+            {% for item in site.other-environments-dev %}
+                <option value="{{item.value}}">{{item.name}}</option>
+            {% endfor %}
+        </optgroup>
     </select>
 </div>
 <div class="github">

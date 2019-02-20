@@ -6,13 +6,9 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="icon" href="{{ "/template/images/solace-favicon.png " | prepend: site.baseurl }}" type="image/x-icon">
-
-  {% if jekyll.environment == 'solaceCloud' %}
-    {% include solace-cloud-dependency.html %}
-  {% else %}
-    {% include dev-solace-dependency.html %}
-  {% endif %}
-
+  
+  {% include solace-cloud-dependency.html %}
+  
   {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
   {% endif %}

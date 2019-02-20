@@ -5,18 +5,10 @@
 
   <body id="top" class="wrap wider">
 
-    {% if jekyll.environment == 'solaceCloud' %}
-      {% include solace-cloud-header-base.html %}
-    {% else %}
-      {% include dev-solace-header-base.html %}
-    {% endif %}
+    {% include solace-cloud-header-base.html %}
 
     {{ content }}
 
-    {% if jekyll.environment == 'solaceCloud' %}
-      {% include solace-cloud-footer.html %}
-    {% else %}
-      {% include dev-solace-footer.html %}
-    {% endif %}
+    {% include solace-cloud-footer.html %}
   </body>
 </html>
