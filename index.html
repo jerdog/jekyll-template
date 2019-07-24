@@ -6,7 +6,7 @@ permalink: /
     {% include solace-cloud-header-sample.html %}
     <div class="body">
         <div class="container container-tutorials">
-            <div class="title">Key Message Exchange Patterns</div>
+            <div class="title">{{ site.first_section_name | default: 'Key Message Exchange Patterns' }}</div>
             <div class="tutorials learn row">
                 {% assign count = 0 %}
                 {% for section in site.data.tutorials %}
@@ -39,7 +39,7 @@ permalink: /
                 {% assign count = 0 %}
                 {% for section in site.data.tutorials %}
                     {% if section.features %}
-                        <div class="title" style="padding-left:10px !important">API Feature Introductions</div>
+                        <div class="title" style="padding-left:10px !important">{{ site.second_section_name | default: 'API Feature Introductions' }}</div>
                     {% endif %}
                     {% for item in section.features %}
                         {% assign item_url = item | prepend:"/" | append:"/" %}

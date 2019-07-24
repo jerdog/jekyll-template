@@ -21,7 +21,7 @@ solace-apis-cloud:
   - value: //solace.com/samples/solace-samples-nodejs/
     name: Node.js
 open-apis-cloud:
-  - value: //cloud.solace.com/samples/solace-samples-amqp-qpid-jms1/
+  - value: //solace.com/samples/solace-samples-amqp-qpid-jms1/
     name: AMQP - JMS 1.1
   - value: //solace.com/samples/solace-samples-amqp-qpid-jms2/
     name: AMQP - JMS 2.0
@@ -29,7 +29,7 @@ open-apis-cloud:
     name: AMQP - Node.js
   - value: //solace.com/samples/solace-samples-mqtt/
     name: MQTT - Eclipse Paho Java
-  - value: //cloud.solace.com/samples/solace-samples-amqp-qpid-jms1/
+  - value: //solace.com/samples/solace-samples-amqp-qpid-jms1/
     name: JMS 1.1 - Apache Qpid
   - value: //solace.com/samples/solace-samples-amqp-qpid-jms2/
     name: JMS 2.0 - Apache Qpid
@@ -40,7 +40,9 @@ open-apis-cloud:
   - value: //solace.com/samples/solace-samples-rest-messaging/
     name: REST Messaging
 other-environments-dev:
-  - value: //dev.solace.com/get-started/pcf-tutorials/
+  - value: //solace.com/samples/solace-samples-spring/
+    name: Spring Projects
+  - value: //docs.pivotal.io/partners/solace-pubsub/
     name: Pivotal Cloud Foundry
 
 #----------------------------------------------------
